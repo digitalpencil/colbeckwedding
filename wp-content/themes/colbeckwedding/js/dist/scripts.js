@@ -18,7 +18,6 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 /**
  * @file Language
- * @author {@link http://building-blocks.com Building Blocks}
  */
 var bb = bb ? bb : {};
 (function($) {
@@ -29,7 +28,6 @@ var bb = bb ? bb : {};
 
 /**
  * @file Settings
- * @author {@link http://building-blocks.com Building Blocks}
  */
 var bb = bb ? bb : {};
 (function($) {
@@ -76,7 +74,6 @@ var bb = bb ? bb : {};
 
 /**
  * @file Events
- * @author {@link http://building-blocks.com Building Blocks}
  */
 var bb = bb ? bb : {};
 (function($) {

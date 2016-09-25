@@ -11,6 +11,7 @@ input[type="submit"] {
 }
 
 .gold-btn {
+    color:$offwhite;
 	border: none;
 	background: none;
     position: relative;
@@ -22,6 +23,7 @@ input[type="submit"] {
     line-height: 1;
     padding: 46px 105px 40px;
     text-shadow: 1px 1px 0px $gold;
+    border-radius:4px;
     
     &::before,
     &::after {
@@ -32,17 +34,29 @@ input[type="submit"] {
     	top: 0;
     	bottom: 0;
     	right: 0;
-    	background: $gold;
-    	z-index: -1;	
+    	background: linear-gradient(180deg, $gold 0%, #8f5f15 100%);
+    	z-index: -1;
+        border-radius:4px;
     }
 
     &::after {
 	    opacity: 0;
-	    background: linear-gradient(180deg, $gold 0%, #8f5f15 100%);
+        background: linear-gradient(180deg, #8f5f15 0%, $gold 100%);
 	    transition: opacity.3s ease-in-out;
     }
 
-    &:hover::after {
-    	opacity: 1;
+    &:hover {
+        color:#fff;
+        &::after {
+    	   opacity: 1;
+        }
 	}
+
+    &--style-a {
+        padding: 40px 60px;
+        margin: 0 24px;
+        .fa {
+            margin-right:12px;
+        }
+    }
 }

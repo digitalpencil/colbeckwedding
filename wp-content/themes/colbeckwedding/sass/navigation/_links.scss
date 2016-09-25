@@ -20,6 +20,7 @@ a {
 }
 
 .icon-link {
+	text-transform:uppercase;
 	.fa {
 		margin-right:12px;
 	}
@@ -30,5 +31,11 @@ a {
 		span {
 			border-bottom:solid 1px $gold;
 		}
+	}
+}
+
+.icon-heading {
+	.fa {
+		margin-right:12px;
 	}
 }
