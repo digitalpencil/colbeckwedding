@@ -1,0 +1,48 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    color: $offblack;
+    &:active,
+    &:focus, 
+    &:hover {
+    	
+    }
+}
+
+.gold-btn {
+	border: none;
+	background: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 46px 105px 40px;
+    text-decoration: none;
+    @include font-size(2.4);
+    line-height: 1;
+    padding: 46px 105px 40px;
+    text-shadow: 1px 1px 0px $gold;
+    
+    &::before,
+    &::after {
+    	content: '';
+    	display: block;
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	bottom: 0;
+    	right: 0;
+    	background: $gold;
+    	z-index: -1;	
+    }
+
+    &::after {
+	    opacity: 0;
+	    background: linear-gradient(180deg, $gold 0%, #8f5f15 100%);
+	    transition: opacity.3s ease-in-out;
+    }
+
+    &:hover::after {
+    	opacity: 1;
+	}
+}
