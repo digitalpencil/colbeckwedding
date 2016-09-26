@@ -1,5 +1,8 @@
 h1, h2, h3, h4, h5, h6, p, address {
 	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
 	text-transform:uppercase;
 }
 
@@ -22,6 +25,10 @@ h2 {
 
 .large {
 	font-size:49px;
+}
+
+.upper {
+	text-transform:uppercase;
 }
 
 .location-heading {

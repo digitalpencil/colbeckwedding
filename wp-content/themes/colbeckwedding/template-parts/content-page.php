@@ -12,7 +12,7 @@
 <article>
 	<section id="when" class="grid-70 prefix-15 suffix-15">
 		<h2>When</h2>
-		<p class="large">The seventh of may two <br>thousand and seventeen</p>
+		<p class="large upper">The seventh of may two <br>thousand and seventeen</p>
 		<div class="calendar-links">
 			<p class="icon-heading"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i><span>Save the date</span></p>
 			<a href="<?php echo get_template_directory_uri(); ?>/downloads/colbeckwedding.ics" class="gold-btn gold-btn--style-a" download><i class="fa fa-apple" aria-hidden="true"></i><span>on iPhone</span></a>
