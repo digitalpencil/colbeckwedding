@@ -17,13 +17,19 @@ input[type="submit"] {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    padding: 46px 105px 40px;
     text-decoration: none;
-    @include font-size(2.4);
     line-height: 1;
     padding: 46px 105px 40px;
     text-shadow: 1px 1px 0px $gold;
     border-radius:4px;
+
+    font-size: 21px;
+    padding: 18px;
+
+    @media #{$BPD} {
+        @include font-size(2.4);
+        padding: 46px 105px 40px;
+    }
     
     &::before,
     &::after {
@@ -53,8 +59,12 @@ input[type="submit"] {
 	}
 
     &--style-a {
-        padding: 40px 60px;
-        margin: 0 24px;
+        margin: 18px 0;
+        max-width: 100%;
+        @media #{$BPD} {
+            padding: 40px 60px;
+            margin: 0 24px;
+        }
         .fa {
             margin-right:12px;
         }

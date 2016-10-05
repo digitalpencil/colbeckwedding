@@ -29,6 +29,7 @@
 			<strong>St Wilfrids RC Church</strong><br>
 			Witton St<br>
 			Northwich<br>
+			Cheshire<br>
 			CW9 5NP
 			</address>
 			<p><a class="icon-link" href="tel:01606 42440"><i class="fa fa-phone" aria-hidden="true"></i><span>01606 42440</span></a></p>

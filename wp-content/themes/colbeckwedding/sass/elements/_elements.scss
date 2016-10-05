@@ -16,7 +16,12 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 	background-image: url('images/bg-tile.png');
 	background-attachment:fixed;
-	padding: 50px;
+	padding:10px;
+	background-size:100px;
+	@media #{$BPB} {
+		padding: 50px;
+		background-size:auto;
+	}
 }
 
 blockquote, q {
@@ -58,13 +63,19 @@ img {
 	background-image: url(images/flourish-left-top.svg),url(images/flourish-right-top.svg),url(images/flourish-right-bottom.svg),url(images/flourish-left-bottom.svg);
 	background-position: left top, right top, right bottom, left bottom;
 	background-repeat: no-repeat;
+	background-size:100px;
+	@media #{$BPD} {
+		background-size:auto;
+	}
 }
 
 .site-heading {
 	margin-top:5vh;
-	height:70vh;
-	max-height:664px;
-	min-height:300px;
+	@media #{$BPE} {
+		height:70vh;
+		min-height:300px;
+		max-height:664px;
+	}
 }
 
 

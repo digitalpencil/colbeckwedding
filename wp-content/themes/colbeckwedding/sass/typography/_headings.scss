@@ -15,16 +15,28 @@ h1 {
 
 h2 {
 	font-family: $font__heading;
-	font-size:220px;
 	color:$gold;
 	margin: 0;
 	font-weight: 100;
 	text-shadow: 0px 12px 7px rgba(0,0,0,0.35);
 	letter-spacing:0.4rem;
+
+	font-size:100px;
+	line-height:100px;
+
+	@media #{$BPD} {
+		font-size:220px;
+		line-height:220px;
+	}
 }
 
 .large {
-	font-size:49px;
+	font-size:26px;
+	line-height:38px;
+	@media #{$BPD} {
+		font-size:49px;
+		line-height:73px;
+	}
 }
 
 .upper {
@@ -32,9 +44,13 @@ h2 {
 }
 
 .location-heading {
-	font-size:49px;
+	font-size:26px;
 	margin-bottom:$vr*2;
 	color:$color__text-alt;
+
+	@media #{$BPD} {
+		font-size:49px;
+	}
 }
 
 .site-heading__line-one {
